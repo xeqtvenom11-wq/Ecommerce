@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f7f7f7;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111;
+            padding: 15px 40px;
+            color: white;
+        }
+        .navbar h1 {
+            letter-spacing: 1px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 60vh;
+            background: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            padding-left: 50px;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .hero button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            background: #ff9800;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .hero button:hover {
+            background: #e48800;
+        }
+
+        /* PRODUCT GRID */
+        .products {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .product-card .info {
+            padding: 20px;
+        }
+        .product-card h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .product-card p {
+            color: #555;
+        }
+        .product-card button {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #111;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h1>ShopX</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h2>Discover the Latest Trends</h2>
+        <button>Shop Now</button>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="products" id="products">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" />
+            <div class="info">
+                <h3>Smart Watch</h3>
+                <p>$149.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c01" />
+            <div class="info">
+                <h3>Headphones</h3>
+                <p>$89.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" />
+            <div class="info">
+                <h3>Bluetooth Speaker</h3>
+                <p>$59.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2025 ShopX — All Rights Reserved
+    </footer>
+
+</body>
+</html>
